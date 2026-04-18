@@ -6,7 +6,7 @@ import { useId } from "react";
 import { useRouter } from "next/navigation";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
-import { createNote } from "@/lib/api";
+import { createNote } from "@/lib/api/clientApi";
 import { noteTags, type NoteTag } from "@/types/note";
 import { useNoteDraftStore } from "@/lib/store/noteStore";
 
