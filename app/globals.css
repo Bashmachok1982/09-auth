@@ -1,0 +1,80 @@
+:root {
+  --color-bg: #1a0008;
+  --color-bg-accent: #120005;
+  --color-surface: #2a0010;
+  --color-surface-soft: #300012;
+  --color-border: #4a0820;
+  --color-text: #ffedab;
+  --color-text-muted: #d4b880;
+  --color-text-secondary: #c8a870;
+  --color-text-soft: #fff8e0;
+  --color-accent: #4f6815;
+  --color-accent-hover: #3d5210;
+  --color-accent-strong: #ffedab;
+  --color-item-bg: #2a0010;
+  --color-item-bg-hover: #380015;
+  --color-nav-bg: #220008;
+  --color-nav-bg-hover: #300010;
+  --color-nav-bg-active: #1a0008;
+  --color-pagination-active: #3a0018;
+  --color-pagination-border: #2a0010;
+  --color-error: #e74c3c;
+  --color-decor: rgba(79, 104, 21, 0.12);
+  --color-hero-bg: rgba(26, 0, 8, 0.7);
+  --color-hero-decorText: rgba(255, 237, 171, 0.06);
+}
+
+:root.light {
+  --color-bg: #fefcef;
+  --color-bg-accent: #f5f3e0;
+  --color-surface: #edeacc;
+  --color-surface-soft: #f8f6e8;
+  --color-border: #c8a870;
+  --color-text: #66001f;
+  --color-text-muted: #8a2a3a;
+  --color-text-secondary: #7a1a2e;
+  --color-text-soft: #550018;
+  --color-accent: #4f6815;
+  --color-accent-hover: #3d5210;
+  --color-accent-strong: #66001f;
+  --color-item-bg: #e8e4c0;
+  --color-item-bg-hover: #ddd8b0;
+  --color-nav-bg: #f0ecd8;
+  --color-nav-bg-hover: #e8e4c8;
+  --color-nav-bg-active: #fefcef;
+  --color-pagination-active: #ddd8b0;
+  --color-pagination-border: #ccc8a0;
+  --color-error: #75070c;
+  --color-decor: rgba(79, 104, 21, 0.12);
+  --color-hero-bg: rgba(254, 252, 239, 0.75);
+  --color-hero-decorText: rgba(102, 0, 31, 0.08);
+}
+
+body {
+  font-family: var(--font-roboto), sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    180deg,
+    var(--color-bg) 0%,
+    var(--color-bg-accent) 100%
+  );
+  color: var(--color-text);
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.page-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  transition: opacity 0.2s ease;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logoIcon {
+  color: var(--color-accent);
+  font-size: 26px;
+}
+
+.accent {
+  color: var(--color-accent);
+}
+
+.divider {
+  flex: 1;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.navLink:hover {
+  color: var(--color-text);
+  background-color: var(--color-nav-bg-hover);
+}
+
+.separator {
+  width: 1px;
+  height: 20px;
+  background-color: var(--color-border);
+  margin: 0 8px;
+}
+
+.iconBtn {
+  font-size: 18px;
+  color: var(--color-text-muted);
+  transition: all 0.2s ease;
+  display: block;
+}
+
+.iconBtn:hover {
+  color: var(--color-accent);
+  transform: scale(1.15);
+}
+
+.themeBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
